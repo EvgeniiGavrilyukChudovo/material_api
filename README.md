@@ -1,15 +1,15 @@
 # material_api
 
 - Install net core 3.1
-- Download docker.
-- Run scripts/run-ravendb-linux.ps1 to install ravenDb emulator and run it inside docker container. By default it use such location 'http://localhost:8080/'
+- Download and install docker.
+- Run powershell script from 'scripts/run-ravendb-linux.ps1' to install ravenDb emulator. By default it is is located here 'http://localhost:8080/'
 - Inside RavenDb create database with name 'Material'.
-If you want to have different name or address, changed it in docker and go to appsettings.json in 'Material.Hosting' project and change here too.
+If you want use different database name you can change it in appsettings.json in 'Material.Hosting' project.
 
 - Open and run 'Material.Hosting' project.
 - Navigate to the link in your browser: http://localhost:5000/swagger/index.html
 
-Now you can all check CRUD operations via swagger interface.
+Now you can check all CRUD operations via swagger interface.
 
 
 
